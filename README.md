@@ -67,7 +67,7 @@ This simplified diagram represents the high-level path a client request takes fr
 
 ---
 
-<img src="assets/architecture_flow.png" alt="System Architecture Flow" width="800">
+<img src="assets/architecture_flow.png" alt="System Architecture Flow" width="900">
 
 ---
 
@@ -348,7 +348,7 @@ Triggers the local row-level lock caching route to safely buffer mass checkout s
 ```json
 {
   "user_id": "01a1b9b5-8dec-7bda-ad71-16429791723e",
-  "idempotency_key": "war-checkout-regular-agin-1",
+  "idempotency_key": "war-checkout-agin-1",
   "items": [
     {
       "product_id": "01a17d38-d4cf-7bda-a3ed-54c829e37a17",
@@ -365,7 +365,7 @@ Bypasses the async worker queue and performs real-time synchronous stock invento
 ```json
 {
   "user_id": "01a1b9b5-8dec-7bda-ad71-16429791723e",
-  "idempotency_key": "war-checkout-regular-agin-1",
+  "idempotency_key": "checkout-regular-agin-1",
   "items": [
     {
       "product_id": "01a17d38-d4cf-7bda-a3ed-54c829e37a17",

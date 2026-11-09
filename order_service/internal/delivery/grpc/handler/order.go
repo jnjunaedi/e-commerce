@@ -57,7 +57,7 @@ func (h *gRPCHandlerImpl) CreateOrder(ctx context.Context, req *orderpb.CreateOr
 func (h *gRPCHandlerImpl) GetOrder(ctx context.Context, req *orderpb.GetOrderRequest) (*orderpb.OrdersResponse, error) {
 	res, err := h.uc.GetOrderDetails(ctx, req.GetOrderId())
 	if err != nil {
-		return nil, err
+		return nil, errgrpc.ReadInternalError(err)
 	}
 
 	itemsGRPC := make([]*orderpb.OrderItemResponse, 0, len(res.Items))
