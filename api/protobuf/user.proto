@@ -1,0 +1,85 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "./pb/userpb";
+
+service UserService {
+  rpc CreateUserProfile (CreateUserProfileRequest) returns (CreateUserProfileResponse);
+  rpc UpdateUserProfile (UpdateUserProfileRequest) returns (UpdateUserProfileResponse);
+  rpc CreateUserAddress (CreateUserAddressRequest) returns (CreateUserAddressResponse);
+  rpc UpdateUserAddress (UpdateUserAddressRequest) returns (UpdateUserAddressResponse);
+  rpc GetUserAddress (GetUserAddressRequest) returns (GetUserAddressResponse);
+}
+
+message CreateUserProfileRequest {
+  string user_id = 1;
+  string username = 2;
+}
+
+message CreateUserProfileResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message UpdateUserProfileRequest {
+  string user_id = 1;
+  string username = 2;
+  string full_name = 3;
+  string phone_number = 4;
+  string avatar_url = 5;
+}
+
+message UpdateUserProfileResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message CreateUserAddressRequest {
+  string user_id = 1;
+  string recipient_name = 2;
+  string phone_number = 3;
+  string full_address = 4;
+  string city = 5;
+  string postal_code = 6;
+  bool is_default = 7;
+}
+
+message CreateUserAddressResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message UpdateUserAddressRequest {
+  string user_id = 1;
+  string recipient_name = 2;
+  string phone_number = 3;
+  string full_address = 4;
+  string city = 5;
+  string postal_code = 6;
+  bool is_default = 7;
+}
+
+message UpdateUserAddressResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message GetUserAddressRequest {
+  string user_id = 1;
+}
+
+message Address {
+  string address_id = 1;
+  string recipient_name = 2;
+  string phone_number = 3;
+  string full_address = 4;
+  string city = 5;
+  string postal_code = 6;
+  bool is_default = 7;
+}
+
+message GetUserAddressResponse {
+  string user_id = 1;
+  repeated Address addresses = 2; 
+}

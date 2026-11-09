@@ -1,0 +1,345 @@
+# command-line-arguments
+notification_service\cmd/main.go:35:2: can inline main.deferwrap1
+notification_service\cmd/main.go:62:2: can inline main.deferwrap2
+notification_service\cmd/main.go:69:3: can inline main.func1.deferwrap1
+notification_service\cmd/main.go:73:5: can inline main.func2
+notification_service\cmd/main.go:82:5: can inline main.func3
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[go.shape.interface { Error() string }]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[go.shape.interface { Error() string }]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[go.shape.interface { Error() string }]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[go.shape.interface { Error() string }]).Load
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: can inline kgo.(*ring[go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:2: can inline kgo.(*ring[go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40]).dropPeek.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:2: can inline kgo.(*ring[go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40]).doPush.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:92:6: can inline kgo.(*ring[go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40]).pushForce
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:77:6: can inline kgo.(*ring[go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40]).push
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:2: can inline kgo.(*ring[go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40]).empty.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:2: can inline kgo.(*ring[go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40]).die.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: can inline kgo.(*ring[go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40]).initMaxLen
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:2: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }]).dropPeek.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:2: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }]).doPush.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:92:6: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }]).pushForce
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:77:6: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }]).push
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:2: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }]).empty.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:2: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }]).die.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }]).initMaxLen
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: can inline kgo.(*ring[go.shape.*uint8]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:2: can inline kgo.(*ring[go.shape.*uint8]).dropPeek.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:2: can inline kgo.(*ring[go.shape.*uint8]).doPush.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:92:6: can inline kgo.(*ring[go.shape.*uint8]).pushForce
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:77:6: can inline kgo.(*ring[go.shape.*uint8]).push
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:2: can inline kgo.(*ring[go.shape.*uint8]).empty.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:2: can inline kgo.(*ring[go.shape.*uint8]).die.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: can inline kgo.(*ring[go.shape.*uint8]).initMaxLen
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[go.shape.b0b1d668995b53196ed13fd60274122e383e5908e00c6d4d2ef2861ec8a09d25]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[go.shape.b0b1d668995b53196ed13fd60274122e383e5908e00c6d4d2ef2861ec8a09d25]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[go.shape.b0b1d668995b53196ed13fd60274122e383e5908e00c6d4d2ef2861ec8a09d25]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[go.shape.b0b1d668995b53196ed13fd60274122e383e5908e00c6d4d2ef2861ec8a09d25]).Load
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:2: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }]).dropPeek.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:2: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }]).doPush.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:92:6: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }]).pushForce
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:77:6: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }]).push
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:2: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }]).empty.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:2: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }]).die.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }]).initMaxLen
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[go.shape.string]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[go.shape.string]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[go.shape.string]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[go.shape.string]).Load
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:2: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }]).dropPeek.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:2: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }]).doPush.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:92:6: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }]).pushForce
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:77:6: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }]).push
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:2: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }]).empty.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:2: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }]).die.deferwrap1
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: can inline kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }]).initMaxLen
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[go.shape.chan struct {}]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[go.shape.chan struct {}]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[go.shape.chan struct {}]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[go.shape.chan struct {}]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[go.shape.int]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[go.shape.int]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[go.shape.int]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[go.shape.int]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[google.golang.org/grpc/connectivity.State]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[google.golang.org/grpc/connectivity.State]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[google.golang.org/grpc/connectivity.State]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[google.golang.org/grpc/connectivity.State]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[chan struct {}]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[chan struct {}]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[chan struct {}]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[chan struct {}]).Load
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:141:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.batchPromise]).dropPeek
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.batchPromise]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:96:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.batchPromise]).doPush
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:71:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.batchPromise]).empty
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:58:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.batchPromise]).die
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.batchPromise]).initMaxLen
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[string]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[string]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[string]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[string]).Load
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:141:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.shareCallbackEntry]).dropPeek
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.shareCallbackEntry]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:96:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.shareCallbackEntry]).doPush
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:71:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.shareCallbackEntry]).empty
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:58:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.shareCallbackEntry]).die
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.shareCallbackEntry]).initMaxLen
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[github.com/twmb/franz-go/pkg/kgo.source]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[github.com/twmb/franz-go/pkg/kgo.source]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[github.com/twmb/franz-go/pkg/kgo.source]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[github.com/twmb/franz-go/pkg/kgo.source]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[sync.poolChainElt]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[sync.poolChainElt]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[sync.poolChainElt]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[sync.poolChainElt]).Load
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:141:6: can inline kgo.(*ring[*github.com/twmb/franz-go/pkg/kgo.seqResp]).dropPeek
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: can inline kgo.(*ring[*github.com/twmb/franz-go/pkg/kgo.seqResp]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:96:6: can inline kgo.(*ring[*github.com/twmb/franz-go/pkg/kgo.seqResp]).doPush
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:71:6: can inline kgo.(*ring[*github.com/twmb/franz-go/pkg/kgo.seqResp]).empty
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:58:6: can inline kgo.(*ring[*github.com/twmb/franz-go/pkg/kgo.seqResp]).die
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: can inline kgo.(*ring[*github.com/twmb/franz-go/pkg/kgo.seqResp]).initMaxLen
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:141:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.promisedReq]).dropPeek
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.promisedReq]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:96:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.promisedReq]).doPush
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:71:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.promisedReq]).empty
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:58:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.promisedReq]).die
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.promisedReq]).initMaxLen
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:141:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.promisedResp]).dropPeek
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.promisedResp]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:96:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.promisedResp]).doPush
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:71:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.promisedResp]).empty
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:58:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.promisedResp]).die
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: can inline kgo.(*ring[github.com/twmb/franz-go/pkg/kgo.promisedResp]).initMaxLen
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[error]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[error]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[error]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[error]).Load
+notification_service\cmd/main.go:24:54: inlining call to context.Background
+notification_service\cmd/main.go:42:36: inlining call to email.NewSMTPSender
+notification_service\cmd/main.go:50:39: inlining call to repository.NewRepository
+notification_service\cmd/main.go:51:31: inlining call to usecase.NewUsecase
+notification_service\cmd/main.go:52:56: inlining call to handler.NewNotificationGRPCHandler
+notification_service\cmd/main.go:95:21: inlining call to grpc.(*Server).GracefulStop
+notification_service\cmd/main.go:62:22: inlining call to kafka.(*Consumer).Close
+notification_service\cmd/main.go:62:22: inlining call to kgo.(*Client).Close
+notification_service\cmd/main.go:69:16: inlining call to sync.(*WaitGroup).Done
+notification_service\cmd/main.go:75:14: inlining call to log.Printf
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:144:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:163:11: inlining call to kgo.(*ring[go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:144:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:97:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:113:11: inlining call to kgo.(*ring[go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:97:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:72:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:72:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:59:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:59:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:55:23: inlining call to sync.NewCond
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:144:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:163:11: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:144:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:97:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:113:11: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:97:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:72:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:72:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:59:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:59:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:55:23: inlining call to sync.NewCond
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:144:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:163:11: inlining call to kgo.(*ring[go.shape.*uint8]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:144:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:97:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:113:11: inlining call to kgo.(*ring[go.shape.*uint8]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:97:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:72:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:72:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:59:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:59:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:55:23: inlining call to sync.NewCond
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:144:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:163:11: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:144:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:97:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:113:11: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:97:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:72:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:72:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:59:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:59:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:55:23: inlining call to sync.NewCond
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:144:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:163:11: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:144:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:145:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:97:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:113:11: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:97:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:98:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:72:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:72:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:73:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:59:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:59:11: inlining call to sync.(*Mutex).Lock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:60:19: inlining call to sync.(*Mutex).Unlock
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:55:23: inlining call to sync.NewCond
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: inlining call to atomic.(*Pointer[go.shape.int]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: inlining call to atomic.(*Pointer[go.shape.int]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: inlining call to atomic.(*Pointer[go.shape.int]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: inlining call to atomic.(*Pointer[go.shape.int]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: inlining call to atomic.(*Pointer[go.shape.chan struct {}]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: inlining call to atomic.(*Pointer[go.shape.chan struct {}]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: inlining call to atomic.(*Pointer[go.shape.chan struct {}]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: inlining call to atomic.(*Pointer[go.shape.chan struct {}]).Load
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:92:6: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }]).pushForce
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:77:6: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }]).push
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }]).initMaxLen
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: inlining call to sync.NewCond
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: inlining call to atomic.(*Pointer[go.shape.string]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: inlining call to atomic.(*Pointer[go.shape.string]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: inlining call to atomic.(*Pointer[go.shape.string]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: inlining call to atomic.(*Pointer[go.shape.string]).Load
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:92:6: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }]).pushForce
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:77:6: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }]).push
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }]).initMaxLen
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: inlining call to sync.NewCond
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: inlining call to atomic.(*Pointer[go.shape.b0b1d668995b53196ed13fd60274122e383e5908e00c6d4d2ef2861ec8a09d25]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: inlining call to atomic.(*Pointer[go.shape.b0b1d668995b53196ed13fd60274122e383e5908e00c6d4d2ef2861ec8a09d25]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: inlining call to atomic.(*Pointer[go.shape.b0b1d668995b53196ed13fd60274122e383e5908e00c6d4d2ef2861ec8a09d25]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: inlining call to atomic.(*Pointer[go.shape.b0b1d668995b53196ed13fd60274122e383e5908e00c6d4d2ef2861ec8a09d25]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: inlining call to atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: inlining call to atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: inlining call to atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: inlining call to atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).Load
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: inlining call to kgo.(*ring[go.shape.*uint8]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:92:6: inlining call to kgo.(*ring[go.shape.*uint8]).pushForce
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:77:6: inlining call to kgo.(*ring[go.shape.*uint8]).push
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: inlining call to kgo.(*ring[go.shape.*uint8]).initMaxLen
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: inlining call to sync.NewCond
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:92:6: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }]).pushForce
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:77:6: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }]).push
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: inlining call to kgo.(*ring[go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }]).initMaxLen
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: inlining call to sync.NewCond
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: inlining call to kgo.(*ring[go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40]).resize
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:92:6: inlining call to kgo.(*ring[go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40]).pushForce
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:77:6: inlining call to kgo.(*ring[go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40]).push
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: inlining call to kgo.(*ring[go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40]).initMaxLen
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: inlining call to sync.NewCond
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: inlining call to atomic.(*Pointer[go.shape.interface { Error() string }]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: inlining call to atomic.(*Pointer[go.shape.interface { Error() string }]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: inlining call to atomic.(*Pointer[go.shape.interface { Error() string }]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: inlining call to atomic.(*Pointer[go.shape.interface { Error() string }]).Load
+<autogenerated>:1: inlining call to sync.(*poolDequeue).pack
+<autogenerated>:1: inlining call to sync.(*poolDequeue).unpack
+<autogenerated>:1: inlining call to reflect.flag.kind
+<autogenerated>:1: inlining call to reflect.flag.kind
+<autogenerated>:1: inlining call to reflect.flag.mustBe
+<autogenerated>:1: inlining call to reflect.flag.kind
+<autogenerated>:1: inlining call to reflect.flag.mustBe
+<autogenerated>:1: inlining call to reflect.flag.kind
+<autogenerated>:1: inlining call to reflect.flag.mustBeAssignable
+<autogenerated>:1: inlining call to reflect.flag.mustBeAssignable
+<autogenerated>:1: inlining call to reflect.flag.mustBeExported
+<autogenerated>:1: inlining call to reflect.flag.mustBeExported
+<autogenerated>:1: inlining call to reflect.flag.ro
+<autogenerated>:1: inlining call to reflect.flag.ro
+C:\Program Files\Go\src\log\log.go:408:24: leaking param: b to result ~r0 level=0
+notification_service\cmd/main.go:65:6: moved to heap: wg
+notification_service\cmd/main.go:24:54: context.backgroundCtx{} escapes to heap
+notification_service\cmd/main.go:28:13: ... argument does not escape
+notification_service\cmd/main.go:33:13: ... argument does not escape
+notification_service\cmd/main.go:39:13: ... argument does not escape
+notification_service\cmd/main.go:42:36: &email.smtpEmailSender{...} escapes to heap
+notification_service\cmd/main.go:50:39: &repository.RepositoryImpl{...} escapes to heap
+notification_service\cmd/main.go:51:31: &usecase.UsecaseImpl{...} escapes to heap
+notification_service\cmd/main.go:52:56: &handler.gRPCHandlerImpl{...} escapes to heap
+notification_service\cmd/main.go:54:21: []string{...} escapes to heap
+notification_service\cmd/main.go:55:20: []string{...} escapes to heap
+notification_service\cmd/main.go:60:13: ... argument does not escape
+notification_service\cmd/main.go:68:5: func literal escapes to heap
+notification_service\cmd/main.go:73:5: func literal escapes to heap
+notification_service\cmd/main.go:75:14: ... argument does not escape
+notification_service\cmd/main.go:75:14: func literal does not escape
+notification_service\cmd/main.go:82:5: func literal escapes to heap
+notification_service\cmd/main.go:89:15: ... argument does not escape
+notification_service\cmd/main.go:89:29: syscall.Signal(2) does not escape
+notification_service\cmd/main.go:89:45: syscall.Signal(15) does not escape
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:163:11: make([]go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40, 8) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:127:18: make([]go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:113:11: make([]go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:55:23: &sync.Cond{...} escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:163:11: make([]go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }, 8) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:127:18: make([]go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:113:11: make([]go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:55:23: &sync.Cond{...} escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:163:11: make([]go.shape.*uint8, 8) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:127:18: make([]go.shape.*uint8, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:113:11: make([]go.shape.*uint8, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:55:23: &sync.Cond{...} escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:163:11: make([]go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }, 8) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:127:18: make([]go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:113:11: make([]go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:55:23: &sync.Cond{...} escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:163:11: make([]go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }, 8) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:127:18: make([]go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:113:11: make([]go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:55:23: &sync.Cond{...} escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: make([]go.shape.struct { github.com/twmb/franz-go/pkg/kgo.baseOffset int64; github.com/twmb/franz-go/pkg/kgo.pid int64; github.com/twmb/franz-go/pkg/kgo.epoch int16; github.com/twmb/franz-go/pkg/kgo.attrs github.com/twmb/franz-go/pkg/kgo.RecordAttrs; github.com/twmb/franz-go/pkg/kgo.beforeBuf bool; github.com/twmb/franz-go/pkg/kgo.recs []github.com/twmb/franz-go/pkg/kgo.promisedRec; github.com/twmb/franz-go/pkg/kgo.err error }, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: &sync.Cond{...} escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: make([]go.shape.struct { github.com/twmb/franz-go/pkg/kgo.results github.com/twmb/franz-go/pkg/kgo.ShareAckResults; github.com/twmb/franz-go/pkg/kgo.nAcks int64 }, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: &sync.Cond{...} escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: make([]go.shape.*uint8, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: &sync.Cond{...} escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: make([]go.shape.struct { github.com/twmb/franz-go/pkg/kgo.ctx context.Context; github.com/twmb/franz-go/pkg/kgo.req github.com/twmb/franz-go/pkg/kmsg.Request; github.com/twmb/franz-go/pkg/kgo.promise func(github.com/twmb/franz-go/pkg/kmsg.Response, error); github.com/twmb/franz-go/pkg/kgo.enqueue time.Time }, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: &sync.Cond{...} escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:126:6: make([]go.shape.d65b9d352694a8a9241cc183a46601778fc6cb669487c1485d4059f80c197c40, kgo.newCap) escapes to heap
+C:/GOPATH/pkg/mod/github.com/twmb/franz-go@v1.22.2/pkg/kgo/ring.go:53:6: &sync.Cond{...} escapes to heap
+<autogenerated>:1: &reflect.ValueError{...} escapes to heap
+<autogenerated>:1: &reflect.ValueError{...} escapes to heap

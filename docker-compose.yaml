@@ -1,0 +1,191 @@
+version: '3.8'
+
+services:
+  e-commerce-db:
+    image: mysql:8.0
+    container_name: ecommerce_mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD} 
+      MYSQL_DATABASE: ecommerce_db
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: always
+    networks:
+      - ecom-network
+
+  api-gateway:
+    build:
+      context: .
+      dockerfile: ./api_gateway/Dockerfile
+    container_name: api-gateway
+    ports:
+      - "${API_PORT}:8080"
+    environment:
+      - PORT=:8080
+      - PRODUCT_SERVICE_ADDR=${PRODUCT_SERVICE_ADDR}
+      - ORDER_SERVICE_ADDR=${ORDER_SERVICE_ADDR}
+      - PAYMENT_SERVICE_ADDR=${PAYMENT_SERVICE_ADDR}
+      - AUTH_SERVICE_ADDR=${AUTH_SERVICE_ADDR}
+      - USER_SERVICE_ADDR=${USER_SERVICE_ADDR}
+    depends_on:
+      - product-service
+      - order-service
+      - payment-service
+      - auth-service
+      - user-service
+    networks:
+      - ecom-network
+
+  auth-service:
+    build:
+      context: .
+      dockerfile: ./auth_service/Dockerfile
+    container_name: auth-microservice
+    ports:
+      - "50055:50055"
+    environment:
+      - AUTH_DB_HOST=ecommerce_mysql_db
+      - AUTH_DB_PORT=${AUTH_DB_PORT}
+      - AUTH_DB_USER=${AUTH_DB_USER}
+      - AUTH_DB_PASSWORD=${AUTH_DB_PASSWORD}
+      - AUTH_DB_NAME=${AUTH_DB_NAME}
+      - USER_SERVICE_ADDR=${USER_SERVICE_ADDR}
+    depends_on:
+      - e-commerce-db
+      - user-service
+    restart: always
+    networks:
+      - ecom-network
+
+  user-service:
+    build:
+      context: .
+      dockerfile: ./user_service/Dockerfile
+    container_name: user-microservice
+    ports:
+      - "50056:50056"
+    environment:
+      - USER_DB_HOST=ecommerce_mysql_db
+      - USER_DB_PORT=${USER_DB_PORT}
+      - USER_DB_USER=${USER_DB_USER}
+      - USER_DB_PASSWORD=${USER_DB_PASSWORD}
+      - USER_DB_NAME=${USER_DB_NAME}
+    depends_on:
+      - e-commerce-db
+    restart: always
+    networks:
+      - ecom-network
+
+  product-service:
+    build:
+      context: .
+      dockerfile: ./product_service/Dockerfile
+    container_name: product-microservice
+    ports:
+      - "50051:50051"
+    environment:
+      - PRODUCT_DB_HOST=ecommerce_mysql_db
+      - PRODUCT_DB_PORT=${PRODUCT_DB_PORT}
+      - PRODUCT_DB_USER=${PRODUCT_DB_USER}
+      - PRODUCT_DB_PASSWORD=${PRODUCT_DB_PASSWORD}
+      - PRODUCT_DB_NAME=${PRODUCT_DB_NAME}
+    depends_on:
+      - e-commerce-db
+    restart: always
+    networks:
+      - ecom-network
+
+  order-service:
+    build:
+      context: .
+      dockerfile: ./order_service/Dockerfile
+    container_name: order-microservice
+    ports:
+      - "50052:50052"
+    environment:
+      - ORDER_DB_HOST=ecommerce_mysql_db
+      - ORDER_DB_PORT=${ORDER_DB_PORT}
+      - ORDER_DB_USER=${ORDER_DB_USER}
+      - ORDER_DB_PASSWORD=${ORDER_DB_PASSWORD}
+      - ORDER_DB_NAME=${ORDER_DB_NAME}
+      - PRODUCT_SERVICE_ADDR=${PRODUCT_SERVICE_ADDR}
+    depends_on:
+      - e-commerce-db
+      - product-service
+    restart: always
+    networks:
+      - ecom-network
+
+  payment-service:
+    build:
+      context: .
+      dockerfile: ./payment_service/Dockerfile
+    container_name: payment-microservice
+    ports:
+      - "50053:50053"
+    environment:
+      - PAYMENT_DB_HOST=ecommerce_mysql_db
+      - PAYMENT_DB_PORT=${PAYMENT_DB_PORT}
+      - PAYMENT_DB_USER=${PAYMENT_DB_USER}
+      - PAYMENT_DB_PASSWORD=${PAYMENT_DB_PASSWORD}
+      - PAYMENT_DB_NAME=${PAYMENT_DB_NAME}
+      - MIDTRANS_SERVER_KEY=${MIDTRANS_SERVER_KEY}
+      - MIDTRANS_IS_PRODUCTION=${MIDTRANS_IS_PRODUCTION}
+      - ORDER_SERVICE_ADDR=${ORDER_SERVICE_ADDR}
+    depends_on:
+      - e-commerce-db
+      - order-service
+    restart: always
+    networks:
+      - ecom-network
+
+  notification-service:
+    build:
+      context: .
+      dockerfile: ./notification_service/Dockerfile
+    container_name: notification-microservice
+    environment:
+      - NOTIFICATION_DB_HOST=ecommerce_mysql_db
+      - NOTIFICATION_DB_PORT=${NOTIFICATION_DB_PORT}
+      - NOTIFICATION_DB_USER=${NOTIFICATION_DB_USER}
+      - NOTIFICATION_DB_PASSWORD=${NOTIFICATION_DB_PASSWORD}
+      - NOTIFICATION_DB_NAME=${NOTIFICATION_DB_NAME}
+      - KAFKA_BROKERS=kafka-broker:9092
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_USERNAME=${SMTP_USERNAME}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+    depends_on:
+      - e-commerce-db
+      - kafka
+    restart: always
+    networks:
+      - ecom-network
+
+  kafka:
+    image: apache/kafka:3.7.0
+    container_name: kafka-broker
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: 'broker,controller'
+      KAFKA_LISTENERS: 'PLAINTEXT://0.0.0.0:9092,CONTROLLER://0.0.0.0:9093'
+      KAFKA_ADVERTISED_LISTENERS: 'PLAINTEXT://kafka-broker:9092' 
+      KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT'
+      KAFKA_CONTROLLER_QUORUM_VOTERS: '1@kafka-broker:9093' 
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+    networks:
+      - ecom-network
+
+networks:
+  ecom-network:
+    driver: bridge
+
+volumes:
+  mysql_data:

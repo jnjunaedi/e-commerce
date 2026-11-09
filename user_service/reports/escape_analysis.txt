@@ -1,0 +1,94 @@
+# command-line-arguments
+user_service\cmd/main.go:28:2: can inline main.deferwrap1
+user_service\cmd/main.go:42:5: can inline main.func1
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[go.shape.interface { Error() string }]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[go.shape.interface { Error() string }]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[go.shape.interface { Error() string }]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[go.shape.interface { Error() string }]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[go.shape.chan struct {}]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[go.shape.chan struct {}]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[go.shape.chan struct {}]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[go.shape.chan struct {}]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[go.shape.int]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[go.shape.int]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[go.shape.int]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[go.shape.int]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[go.shape.string]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[go.shape.string]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[go.shape.string]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[go.shape.string]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[string]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[string]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[string]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[string]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[google.golang.org/grpc/connectivity.State]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[google.golang.org/grpc/connectivity.State]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[google.golang.org/grpc/connectivity.State]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[google.golang.org/grpc/connectivity.State]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[sync.poolChainElt]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[sync.poolChainElt]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[sync.poolChainElt]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[sync.poolChainElt]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[chan struct {}]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[chan struct {}]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[chan struct {}]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[chan struct {}]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: can inline atomic.(*Pointer[error]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: can inline atomic.(*Pointer[error]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: can inline atomic.(*Pointer[error]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: can inline atomic.(*Pointer[error]).Load
+user_service\cmd/main.go:30:38: inlining call to repository.NewRepository
+user_service\cmd/main.go:31:30: inlining call to usecase.NewUsecase
+user_service\cmd/main.go:32:43: inlining call to handler.NewGRPCHandler
+user_service\cmd/main.go:54:21: inlining call to grpc.(*Server).GracefulStop
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: inlining call to atomic.(*Pointer[go.shape.string]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: inlining call to atomic.(*Pointer[go.shape.string]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: inlining call to atomic.(*Pointer[go.shape.string]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: inlining call to atomic.(*Pointer[go.shape.string]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: inlining call to atomic.(*Pointer[go.shape.int]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: inlining call to atomic.(*Pointer[go.shape.int]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: inlining call to atomic.(*Pointer[go.shape.int]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: inlining call to atomic.(*Pointer[go.shape.int]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: inlining call to atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: inlining call to atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: inlining call to atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: inlining call to atomic.(*Pointer[go.shape.struct { sync.poolDequeue; sync.next sync/atomic.Pointer[sync.poolChainElt]; sync.prev sync/atomic.Pointer[sync.poolChainElt] }]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: inlining call to atomic.(*Pointer[go.shape.chan struct {}]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: inlining call to atomic.(*Pointer[go.shape.chan struct {}]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: inlining call to atomic.(*Pointer[go.shape.chan struct {}]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: inlining call to atomic.(*Pointer[go.shape.chan struct {}]).Load
+C:\Program Files\Go\src\sync\atomic\type.go:67:6: inlining call to atomic.(*Pointer[go.shape.interface { Error() string }]).CompareAndSwap
+C:\Program Files\Go\src\sync\atomic\type.go:64:6: inlining call to atomic.(*Pointer[go.shape.interface { Error() string }]).Swap
+C:\Program Files\Go\src\sync\atomic\type.go:61:6: inlining call to atomic.(*Pointer[go.shape.interface { Error() string }]).Store
+C:\Program Files\Go\src\sync\atomic\type.go:58:6: inlining call to atomic.(*Pointer[go.shape.interface { Error() string }]).Load
+<autogenerated>:1: inlining call to sync.(*poolDequeue).pack
+<autogenerated>:1: inlining call to sync.(*poolDequeue).unpack
+<autogenerated>:1: inlining call to reflect.flag.kind
+<autogenerated>:1: inlining call to reflect.flag.kind
+<autogenerated>:1: inlining call to reflect.flag.mustBe
+<autogenerated>:1: inlining call to reflect.flag.kind
+<autogenerated>:1: inlining call to reflect.flag.mustBe
+<autogenerated>:1: inlining call to reflect.flag.kind
+<autogenerated>:1: inlining call to reflect.flag.mustBeAssignable
+<autogenerated>:1: inlining call to reflect.flag.mustBeAssignable
+<autogenerated>:1: inlining call to reflect.flag.mustBeExported
+<autogenerated>:1: inlining call to reflect.flag.mustBeExported
+<autogenerated>:1: inlining call to reflect.flag.ro
+<autogenerated>:1: inlining call to reflect.flag.ro
+user_service\cmd/main.go:21:13: ... argument does not escape
+user_service\cmd/main.go:26:13: ... argument does not escape
+user_service\cmd/main.go:30:38: &repository.RepositoryImpl{...} escapes to heap
+user_service\cmd/main.go:31:30: &usecase.UsecaseImpl{...} escapes to heap
+user_service\cmd/main.go:32:43: &handler.gRPCHandlerImpl{...} escapes to heap
+user_service\cmd/main.go:36:13: ... argument does not escape
+user_service\cmd/main.go:42:5: func literal escapes to heap
+user_service\cmd/main.go:44:14: ... argument does not escape
+user_service\cmd/main.go:50:15: ... argument does not escape
+user_service\cmd/main.go:50:29: syscall.Signal(2) does not escape
+user_service\cmd/main.go:50:45: syscall.Signal(15) does not escape
+<autogenerated>:1: &reflect.ValueError{...} escapes to heap
+<autogenerated>:1: &reflect.ValueError{...} escapes to heap

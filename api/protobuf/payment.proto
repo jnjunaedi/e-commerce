@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package payments;
+
+option go_package = "./;paymentpb";
+
+service PaymentsService {
+  rpc ProcessPayment (ProcessPaymentRequest) returns (PaymentsResponse);
+  rpc HandleWebhook (HandleWebhookRequest) returns (HandleWebhookResponse);
+}
+
+message ProcessPaymentRequest {
+  string order_id = 1;
+  string payment_method = 2;
+  int64 payment_amount = 3;
+}
+
+message PaymentsResponse {
+  string payment_id = 1;
+  string order_id = 2;
+  string payment_status = 3;
+  string payment_method = 4;
+  int64 payment_amount = 5;
+  string message = 6;
+}
+
+message HandleWebhookRequest {
+  string order_id = 1;
+  string transaction_status = 2;
+  string fraud_status = 3;
+}
+
+message HandleWebhookResponse {
+  bool success = 1;
+  string message = 2;
+}

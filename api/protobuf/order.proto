@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+package orders;
+
+option go_package = "./;orderpb";
+
+service OrdersService {
+  rpc CreateOrder (CreateOrderRequest) returns (OrdersResponse);
+  rpc GetOrder (GetOrderRequest) returns (OrdersResponse);
+  rpc UpdateOrderStatus (UpdateOrderStatusRequest) returns (UpdateOrderStatusResponse);
+}
+
+message CreateOrderRequest {
+  string user_id = 1;
+  string idempotency_key = 2;
+  repeated OrderItemRequest items = 3;
+}
+
+message OrderItemRequest {
+  string item_id = 1;   
+  string product_id = 2;
+  string flash_sale_id = 3; 
+  int32 quantity = 4;
+}
+
+message GetOrderRequest {
+  string order_id = 1;
+}
+
+message OrdersResponse {
+  string order_id = 1;
+  string user_id = 2;
+  int64 total_price = 3;   
+  string order_status = 4;
+  string idempotency_key = 5;
+  repeated OrderItemResponse items = 6;
+  google.protobuf.Timestamp created_at = 7;
+}
+
+message OrderItemResponse{
+  string item_id = 1;   
+  string product_id = 2;
+  string flash_sale_id = 3; 
+  int32 quantity = 4;
+  int64 unit_price = 5;
+}
+
+message UpdateOrderStatusRequest {
+  string order_id = 1;
+  string status = 2;
+}
+
+message UpdateOrderStatusResponse {
+  bool success = 1;
+  string message = 2;
+}

@@ -1,0 +1,90 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+package product;
+
+option go_package = "./;productpb"; 
+
+service ProductService {
+  rpc CreateProduct (CreateProductRequest) returns (ProductResponse);
+  rpc GetProduct (GetProductRequest) returns (ProductResponse);
+  rpc CreateFlashSaleProduct (CreateFlashSaleRequest) returns (FlashSaleResponse);
+  rpc GetFlashSaleProduct (GetFlashSaleRequest) returns (FlashSaleResponse);
+  rpc UpdateStock (UpdateStockRequest) returns (UpdateStockResponse);
+  rpc MonitorStock (MonitorStockRequest) returns (stream MonitorStockResponse);
+}
+
+message CreateProductRequest {
+  string product_code = 1;             
+  string product_name = 2;
+  string description = 3;
+  int64 price = 4;      
+  int32 initial_stock = 5;
+  repeated string image_urls = 6;      
+  string category_id = 7; 
+}
+
+message GetProductRequest {
+  string product_id = 1;    
+}
+
+message ProductResponse {
+  string product_id = 1;     
+  string product_code = 2;
+  string product_name = 3;
+  string description = 4;
+  int64 price = 5;        
+  int32 stock = 6;
+  repeated string image_urls = 7;       
+  string category_id = 8;   
+  google.protobuf.Timestamp created_at = 9;
+  google.protobuf.Timestamp updated_at = 10;
+}
+
+message CreateFlashSaleRequest {
+  string product_id = 1;  
+  int64 flash_sale_price = 2;
+  int32 flash_sale_stock = 3;
+  int32 max_purchase_per_user = 4; 
+  int64 start_time = 5;   
+  int64 end_time = 6;      
+}
+
+message GetFlashSaleRequest {
+  string flash_sale_id = 1;  
+}
+
+message FlashSaleResponse {
+  string flash_sale_id = 1;   
+  string product_id = 2;    
+  int64 flash_sale_price = 3; 
+  int32 flash_sale_stock = 4; 
+  int32 max_purchase_per_user = 5;
+  int64 start_time = 6;       
+  int64 end_time = 7;        
+  int32 version = 8;        
+}
+
+message UpdateStockRequest {
+  string product_id = 1;     
+  int32 quantity = 2;       
+  string flash_sale_id = 3;   
+}
+
+message UpdateStockResponse {
+  bool success = 1;
+  string message = 2;
+  int32 current_stock = 3;    
+}
+
+message MonitorStockRequest {
+  string product_id = 1;     
+  string flash_sale_id = 2; 
+}
+
+message MonitorStockResponse {
+  string product_id = 1;
+  string flash_sale_id = 2;
+  int32 current_stock = 3;
+}
