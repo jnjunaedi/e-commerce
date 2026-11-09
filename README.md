@@ -1,4 +1,4 @@
-# E-Commerce System
+# 🛍️ E-Commerce System
 
 I have developed an e-commerce application that implements a **microservices** architecture, with a **clean architecture** applied to each service. This design ensures the application is easy to test, improves code readability, simplifies maintenance, and facilitates future technology transitions. For inter service communication, I utilize **gRPC** to maximize performance. Additionally, I have implemented the **outbox** and **retry** patterns to prevent data inconsistency or synchronization issues that could arise from network failures or server downtime. Throughout the development process, I have minimized reliance on external frameworks or ORMs; this approach allows me to better understand the core characteristics of the Go language by leveraging its native features, ultimately ensuring optimal and seamless application performance.
 
