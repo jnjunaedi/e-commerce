@@ -271,6 +271,35 @@ e-commerce/
 └── go.mod                # Core Go workspace module configuration dependencies
 ```
 
+## 🔍 Running tests
+
+Testing is conducted exclusively at the use case layer, as this represents the critical point in the application's program flow and is where the application's business logic is defined.
+
+```text
+go test -v auth_service/internal/usecase/auth_test.go
+```
+
+```text
+go test -v user_service/internal/usecase/user_test.go
+```
+
+```text
+go test -v product_service/internal/usecase/product_test.go
+```
+
+```text
+go test -v order_service/internal/usecase/order_test.go
+```
+
+```text
+go test -v payment_service/internal/usecase/payment_test.go
+```
+
+```text
+go test -v notification_service/internal/usecase/notification_test.go
+```
+
+
 
 ## 🔌 API Specification & Postman Payloads
 
